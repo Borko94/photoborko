@@ -1,0 +1,57 @@
+// Colors
+
+//--- Brand colors
+// $color-concrete: #C5BAAA;
+// $color-craft: #806D61;
+// $color-bright-brick: #EE7828;
+// $color-graphite: #2C2C2C;
+
+$color-dark: #231B23;
+$color-light: #F7F5F4;
+$color-red: #AB3C24;
+$color-red-light: #E75732;
+$color-dark-light: #6D7174;
+
+$color-concrete: #C5BAAA;
+$color-craft: #806D61;
+$color-bright-brick: #EE7828;
+$color-graphite: #2C2C2C;
+
+$color-primary: #f8a425;
+$color-text: #011523;
+
+//--- Functional colors
+$color-black: #000;
+$color-white: #fff;
+$color-danger: #F5402C;
+$color-warning: #F7922E;
+$color-success: #03B66F;
+$color-main: #1B62A9;
+$color-info: #CBCDD4;
+$color-gray: #858585;
+$color-gray-light: #D8DAE0;
+$color-gray-dark: #3F3F40;
+
+$bg-color-body: $color-primary;
+$bg-color-sidenav: $color-primary;
+$bg-color-content: $color-primary;
+
+// Margin
+$margin-default: 1rem;
+
+// Padding
+$padding-default: 1rem;
+
+// Border radius
+
+// Border
+$border-thickness-default: 1px;
+$border-radius-default: 3px;
+$border-radius-medium: 8px;
+$border-radius-xl: 15px;
+
+// Box Shadow
+$shadow-default: 0 1.5rem 4rem rgba(#000, .15);
+$box-shadow-default: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+$box-shadow-medium: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+$box-shadow-strong: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;

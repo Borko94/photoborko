@@ -1,0 +1,16 @@
+{
+  "name": "photoborko",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:node-sass": "node-sass sass/main.scss css/style.css -w",
+    "watch:sass": "sass sass/main.scss css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "sass": "^1.70.0"
+  }
+}

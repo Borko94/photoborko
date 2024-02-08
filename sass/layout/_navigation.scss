@@ -1,0 +1,182 @@
+// %flex-layout {
+//     width: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+// }
+
+.navigation {
+    margin: 1rem auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    z-index: 999;
+
+    @media only screen and (max-width: $bp-large) {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+    }
+
+    &__logo {
+        text-decoration: none;
+        color: $color-black;
+        font-size: 3rem;
+        font-weight: 600;
+        font-style: italic;
+
+        // &::after {
+        //     display: block;
+        //     content: "";
+        //     margin-top: .5rem;
+        //     width: 0;
+        //     height: 2px;
+        //     background-color: $color-primary;
+        //     transition: width .2s;
+        //     transition-timing-function: cubic-bezier(.17,.67,.83,.67);
+        // }
+
+        // &:hover::after {
+        //     width: 100%;
+        // }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+
+        @media only screen and (max-width: $bp-large) {
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+            // align-items: start;
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            
+        }
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 2rem;
+
+            @media only screen and (max-width: $bp-large) {
+                margin-right: 0;
+                border-bottom: 1px solid $color-white;
+            }
+        }
+        @media only screen and (max-width: $bp-large) {
+            background-color: $color-black;
+            &:hover {
+                background-color: $color-gray-dark;
+            }
+        }
+
+        // &:not(:last-child) {
+        //     margin-right: 2rem;
+
+        //     @media only screen and (max-width: $bp-large) {
+        //         margin-right: 0;
+        //         border-bottom: 1px solid $color-white;
+        //     }
+        // }
+
+        // @media only screen and (max-width: $bp-large) {
+        //     background-color: $color-primary;
+        //     text-align: center;
+        //     // padding: 1rem;
+        //     font-size: 3rem;
+            
+        //     &:hover {
+        //         background-color: $color-gray-light;
+        //     }
+        // }
+    }
+
+    &__link {
+        font-family: 'Open Sans';
+        text-decoration: none;
+        color: $color-black;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        letter-spacing: 0.65px;
+        display: block;
+        line-height: 1.6;
+        padding: 0 0;
+        transition: .4s;
+
+        @media only screen and (max-width: $bp-large) {
+            // margin: 1rem 0;
+            padding: 2rem;
+            font-size: 1.75rem;
+            color: $color-white;
+            text-align: center;
+            
+        }
+
+        &:hover {
+            border-bottom: 1px solid red;
+
+            @media only screen and (max-width: $bp-large) {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+.active {
+    display: block;
+}
+
+.hamburger {
+    position: fixed;
+    top: 1rem;
+    right: 1.5rem;
+    display: none;
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+
+    @media only screen and (max-width: $bp-large) {
+        display: block;
+    }
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: $color-dark;
+    margin: 6px 0;
+    transition: .5s;
+}
+
+.hamburger.is-active:before{
+transform: rotate(-45deg) translate(-6px, 6px);
+background-color: $color-gray-light;
+}
+
+.hamburger.is-active:after{
+    transform: rotate(45deg) translate(-7px, -7px);
+    background-color: $color-gray-light;
+    }
+
+.hamburger.is-active .bar{
+    opacity: 0;
+    background-color: $color-gray-light;
+}

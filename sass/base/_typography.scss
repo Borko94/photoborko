@@ -1,0 +1,94 @@
+// Typography
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400&family=Quattrocento:wght@400;700&display=swap');
+
+$font-title: 'Quattrocento', serif;
+$font-paragraph: 'Open Sans', sans-serif;
+
+$font-bold: 700;
+$font-italic: italic;
+
+$font-size-default: 1.6rem;
+$font-size-xxl: $font-size-default * 3;
+$font-size-xl: $font-size-default * 2;
+$font-size-lg: $font-size-default * 1.5;
+$font-size-sm: $font-size-default * 0.75;
+$font-size-xs: $font-size-default * 0.25;
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $font-title;
+    font-weight: 400;
+    color: $color-text;
+}
+
+h1 { font-size: 3.4rem; }
+h2 { font-size: 2.8rem; }
+h3 { font-size: 2.3rem; }
+h4 { font-size: 1.9rem; }
+
+p {
+    font-family: $font-paragraph;
+    font-size: 1.4rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.heading {
+
+    &-primary {
+        font-size: 3.8rem;
+        font-weight: 400;
+        color: $color-black;
+        line-height: 1.4;
+
+        @media only screen and (max-width: $bp-large) {
+            font-size: 3.5rem;
+        }
+    }
+
+    &-secondary {
+        font-size: 3rem;
+        font-weight: 700;
+        color: $color-black;
+        line-height: 1.4;
+
+        @media only screen and (max-width: $bp-large) {
+            font-size: 3.5rem;
+        }
+    }
+
+    &-text {
+        font-size: 2.4rem;
+        font-weight: 400;
+        color: $color-gray;
+        line-height: 1.5;
+
+        @media only screen and (max-width: $bp-large) {
+            font-size: 1.75rem;
+        }
+
+    }
+}
+
+// Utilities
+.text-center {
+    text-align: center;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+// Font size utilities
+.fs-900 {font-size: 9.5rem;}
+.fs-800 {font-size: 6.25rem;}
+.fs-700 {font-size: 3.5rem;}
+.fs-600 {font-size: 2rem;}
+.fs-500 {font-size: 1.75rem;}
+.fs-400 {font-size: 1.125rem;}
+.fs-300 {font-size: 1rem;}
+.fs-200 {font-size: 0.875rem;}

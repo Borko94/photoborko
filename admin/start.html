@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | PhotoBorko</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.tiny.cloud/1/hf7g21rih1xbx4s0dil6yztrfqp2osfghmx9elqqhrl0z9rn/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+</head>
+<body>
+    <div class="admin">
+        <!-- Header -->
+        <header class="admin__header">
+          <a href="index.html" class="logo">
+            <h4>Admin | PhotoBorko</h4>
+          </a>
+          <div class="toolbar">
+            <button class="btn btn-primary"><a href="../index.html">Client</a></button>
+            <a href="#" class="btn btn-warning btn-sm">
+              Log Out
+            </a>
+          </div>
+        </header>
+
+        <!-- Side navigation -->
+        <nav class="admin__nav">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">
+                <svg class="aside__icon">
+                    <use xlink:href="img/sprite.svg#icon-meter"></use>
+                </svg>
+                Dashboard</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link dropdown-btn" href="#">
+                    <svg class="aside__icon">
+                        <use xlink:href="img/sprite.svg#icon-book"></use>
+                    </svg>
+                    Blog &#8628;</a>
+                <ul class="aside__dropdown">
+                    <li class="aside__item">
+                        <a href="portfolio_gallery.html" class="aside__link">Sve fotografije</a>
+                    </li>
+                    <li class="aside__item">
+                        <a href="portfolio_gallery.html?source=add_portfolio_images" class="aside__link">Dodaj fotografije</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                <svg class="aside__icon">
+                    <use xlink:href="img/sprite.svg#icon-briefcase"></use>
+                </svg>
+                Portfolio</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                <svg class="aside__icon">
+                    <use xlink:href="img/sprite.svg#icon-briefcase"></use>
+                </svg>
+                Razno</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link " href="#">Foobars</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Plumbuses</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Main content -->
+        <main class="admin__main">
+          <h2 class="">Blog - Dodaj novi post</h2>
+          <div class="dashboard">
+            
+            <div class="dashboard__item dashboard__item--full">
+              <div class="">
+                <form action="" class="form">
+                    <div class="row gap-1">
+                        <div class="form__group col-4-md col-12-xs">
+                            <label class="form__label">Naslov</label>
+                            <input class="form__input" type="text" class="form__input" placeholder="Naslov">
+                        </div>
+                        
+                        <div class="form__group col-4-md col-12-xs">
+                            <label class="form__label">Podnaslov</label>
+                            <input class="form__input" type="text" class="form__input" placeholder="Podnaslov">
+                        </div>
+                        <div class="form__group col-4-md col-12-xs">
+                            <label class="form__label">Tags</label>
+                            <input class="form__input" type="text" class="form__input" placeholder="Tags">
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <lable class="form__label">Post Fotografija</lable>
+                        <input name="post_image" type="file" class="form__input" placeholder="Foto...">
+                    </div>
+                    <div class="row gap-1">
+                        <div class="form__group col-6-md col-12-xs">
+                            <label for="" class="form__label">Kategorija</label>
+                            <select name="" id="" class="form__select">
+                                <option value="1" class="form__option">Wedding</option>
+                                <option value="1" class="form__option">Dva</option>
+                                <option value="1" class="form__option">Treasesd</option>
+                            </select>
+                        </div>
+                        <div class="form__group col-6-md col-12-xs">
+                            <label for="" class="form__label">Status</label>
+                            <select name="" id="" class="form__select">
+                                <option value="1" class="form__option">Wedding</option>
+                                <option value="1" class="form__option">Dva</option>
+                                <option value="1" class="form__option">Treasesd</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row gap-1">
+                        <textarea name="" id="" cols="30" rows="10" class="form__textarea" placeholder="Sadržaj"></textarea>
+                    </div>
+                    <div class="rows gap-1 mt-2">
+                        <button class="btn btn-primary btn-xl" type="submit">Submit</button>
+                        <button class="btn btn-success btn-sm" type="submit">Submit</button>
+                        <button class="btn btn-danger" type="submit">Submit</button>
+                        <button class="btn btn-info" type="submit">Submit</button>
+                        <button class="btn btn-warning" type="submit">Submit</button>
+                    </div>
+                    
+                </form>
+              </div>
+            </div>
+
+          </div>
+          
+           
+        </main>
+        <footer class="admin__footer">
+          <ul class="ticker">
+            <p><a href="https://mxb.at/blog/css-grid-admin-dashboard/">read more about this in this blogpost</a>.</p>
+            <!-- <li class="ticker__item">BTC: +3.12%</li>
+            <li class="ticker__item">ETH: +1.29%</li>
+            <li class="ticker__item">XRP: -0.32%</li>
+            <li class="ticker__item">BCH: -2.82%</li>
+            <li class="ticker__item">EOS: +1.44%</li>
+            <li class="ticker__item">CSS: +13.37%</li> -->
+          </ul>
+          <span>
+            <a href="https://borkosavic.com">&copy; 2024 Borko Savic</a>.
+          </span>
+        </footer>
+      </div>
+    
+      <script src="js/script.js"></script>
+      <script>tinymce.init({
+        selector: 'textarea',
+        plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+        toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+        images_upload_url: 'includes/postacceptor.php',
+        convert_urls: false,
+        image_dimensions: false,
+      });</script>
+</body>
+</html>

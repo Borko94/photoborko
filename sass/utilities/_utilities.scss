@@ -1,0 +1,14 @@
+.container {
+    margin: 0 auto;
+    padding: 0 .2rem;
+    max-width: 90rem;
+}
+
+.hr-default {
+    margin: 2rem auto;
+    width: 90%;
+    border: 0;
+    height: 1px;
+    background: $color-gray-dark;
+    background-image: linear-gradient(to right, $color-gray-light, $color-gray-dark, $color-gray-light);
+}

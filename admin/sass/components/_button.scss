@@ -1,0 +1,107 @@
+.btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .1s;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    font-size: inherit;
+    border-radius: 2px;
+    margin: .21rem;
+    font-size: $font-size-default;
+
+    &:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+
+        &::after {
+            transform: scaleX(1.1) scaleY(1.2);
+            opacity: 0;
+        }
+    }
+
+    
+
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+    
+    &-white {
+        background-color: $color-white;
+        color: $color-gray-dark;
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
+
+    &-danger {
+        background-color: $color-danger;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-danger;
+        }
+    }
+
+    &-success {
+        background-color: $color-success;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-success;
+        }
+    }
+
+    &-primary {
+        background-color: $color-main;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-main;
+        }
+    }
+
+    &-info {
+        background-color: $color-info;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-info;
+        }
+    }
+
+    &-warning {
+        background-color: $color-warning;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-warning;
+        }
+    }
+
+    &-xxl {
+        font-size: $font-size-xxl;
+    }
+
+    &-xl {
+        font-size: $font-size-xl;
+    }
+
+    &-lg {
+        font-size: $font-size-lg;
+    }
+
+    &-sm {
+        font-size: $font-size-sm;
+    }
+
+    &-xs {
+        font-size: $font-size-xs;
+    }
+}

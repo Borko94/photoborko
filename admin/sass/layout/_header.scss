@@ -1,0 +1,147 @@
+// Static Variables
+$admin-header-height: 6rem;
+$admin-footer-height: 4rem;
+$admin-nav-width: 20rem;
+
+@media only screen and (max-width: $bp-medium) {
+    $admin-nav-width: 10rem;
+}
+
+@media only screen and (max-width: $bp-small) {
+    $admin-nav-width: 5rem;
+}
+
+// Main Layout Grid
+
+.admin {
+  --spacing: 1rem;
+
+  // Flexbox Fallback
+  display: flex;
+  flex-wrap: wrap;
+
+  // Grid
+  display: grid;
+  height: 100vh;
+
+  grid-template-rows:     $admin-header-height 1fr $admin-footer-height;
+  grid-template-columns:  $admin-nav-width 1fr;
+  grid-template-areas:    "header header"
+                          "nav    main"
+                          "footer footer";
+
+  &__header {
+    display: flex;
+    flex-basis: 100%;
+    grid-area: header;
+    height: $admin-header-height;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    position: relative;
+  }
+
+  &__nav {
+    flex: 0 0 $admin-nav-width;
+    grid-area: nav;
+    background-color: $color-dark;
+  }
+
+  &__main {
+    flex: 1;
+    grid-area: main;
+    padding: var(--spacing);
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+
+    background-color: #f4f7fa;
+  }
+
+  &__footer {
+    display: flex;
+    grid-area: footer;
+    flex-basis: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: $admin-footer-height;
+    padding: 0 var(--spacing);
+    color: $color-light;
+    background-color: #1d2127;
+  }
+
+  @media screen and (min-width: 48rem) {
+    --spacing: 2rem;
+  }
+}
+
+
+// ===============================
+// Demo stuff to make it look nice
+// ===============================
+
+
+.logo {
+  display: flex;
+  flex: 0 0 $admin-nav-width;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  color: $color-white;
+  background-color: $color-red;
+  font-size: 1rem;
+
+}
+
+.toolbar {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--spacing);
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+
+  &__item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  }
+  &__link {
+    display: block;
+    padding: 1.25rem 2rem;
+    color: $color-light;
+    text-decoration: none;
+    font-size: 1.6rem;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: $color-dark-light;
+    }
+  }
+}
+
+.card {
+  height: 100%;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 300;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.ticker {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    margin-right: 1rem;
+  }
+
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoBorko | Official Website</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <nav class="navigation">
+        <div class="navigation__logo"><a href="index.html">Photo<span>Borko</span> </a></div>
+        <ul class="navigation__list" id="navList">
+            <li class="navigation__item"><a href="index.html" class="navigation__link">Početna</a></li>
+            <li class="navigation__item"><a href="about.html" class="navigation__link">O nama</a></li>
+            <li class="navigation__item"><a href="portfolio.html" class="navigation__link">Portfolio</a></li>
+            <li class="navigation__item"><a href="blog.html" class="navigation__link">Blog</a></li>
+            <li class="navigation__item"><a href="contact.html" class="navigation__link">Kontakt</a></li>
+        </ul>
+        <button class="hamburger" id="toggleButton">
+            <div class="bar"></div>
+        </button>
+    </nav>
+    
+    <main class="main">
+        <div class="heading-div text-center">
+            <h1 class="heading-primary">Kontakt</h1>
+        </div>
+
+        <section class="contact">
+            <div class="contact__details">
+                <h1 class="contact__title">Hajde da se čujemo</h1>
+                <p class="contact__text">Otvoreni smo za sve prijedloge ili samo za razgovor</p>
+                <ul class="contact__list">
+                    <li class="contact__item">
+                        <svg class="contact__icon">
+                            <use xlink:href="img/sprite.svg#icon-location"></use>
+                        </svg> 
+                        <span>Adresa: Cara Dušana bb <br> Kotor Varoš 78220</span>
+                    </li>
+                    <li class="contact__item">
+                        <svg class="contact__icon">
+                            <use xlink:href="img/sprite.svg#icon-phone"></use>
+                        </svg> 
+                        <span>Tel.: 00387 63 227 407</span>
+                    </li>
+                    <li class="contact__item">
+                        <svg class="contact__icon">
+                            <use xlink:href="img/sprite.svg#icon-envelop"></use>
+                        </svg> 
+                        <span>Email: info@photoborko.com</span>
+                    </li>
+                    <li class="contact__item">
+                        <svg class="contact__icon">
+                            <use xlink:href="img/sprite.svg#icon-earth"></use>
+                        </svg> 
+                        <span>www.photoborko.com</span>
+                    </li>
+                </ul>
+            </div>
+            <form action="" class="contact__form" method="post">
+                <div class="contact__form-group">
+                    <h1 class="contact__form-title">Kontakt</h1>
+                </div>
+                <!-- <div class="contact__form-group">
+                    <input name="name" type="text" class="contact__input" placeholder="Puno ime i prezime">
+                </div> -->
+                <div class="contact__form-group">
+                    <!-- <label for="" class="contact__label">Email</label> -->
+                    <input name="email" type="email" class="contact__input" placeholder="Email adresa">
+                </div>
+                <div class="contact__form-group">
+                    <!-- <label for="" class="contact__label">Suject</label> -->
+                    <input name="subject" type="text" class="contact__input" placeholder="Tip događaja">
+                </div>
+                <div class="contact__form-group">
+                    <!-- <label for="">Poruka</label> -->
+                    <textarea class="contact__textarea" id="subject" name="body" placeholder="Sadržaj poruke"></textarea>
+                </div>
+                <div class="contact__form-group">
+                    <button class="contact__button" type="submit" name="submit_email">Pošalji poruku</button>
+                </div>
+            </form>
+        </section>
+        
+    </main>
+
+    <section class="details">
+        <div class="details__item">
+            <svg class="details__icon">
+                <use xlink:href="img/sprite.svg#icon-info"></use>
+            </svg> 
+            <h1 class="details__title"><a href="faq.html">Informacije</a></h1>
+            <h4 class="details__subtitle">Paketi i FAQ</h4>
+        </div>
+        <div class="details__item">
+            <svg class="details__icon">
+                <use xlink:href="img/sprite.svg#icon-pencil2"></use>
+            </svg> 
+            <h1 class="details__title"><a href="blog.html">Blog</a></h1>
+            <h4 class="details__subtitle"><a href="blog.php">Poslednji članci</a></h4>
+        </div>
+        <div class="details__item">
+            <svg class="details__icon">
+                <use xlink:href="img/sprite.svg#icon-share2"></use>
+            </svg> 
+            <h1 class="details__title">Zaprati me</h1>
+            <ul class="details__list">
+                <li class="details__listItem">
+                    <a target="_blank" href="https://www.facebook.com/photoborko/" class="details__link">
+                        <svg class="details__social-icon">
+                            <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                        </svg> 
+                    </a>
+                </li>
+                <li class="details__listItem">
+                    <a target="_blank" href="https://www.instagram.com/photoborko/" class="details__link">
+                        <svg class="details__social-icon">
+                            <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                        </svg> 
+                    </a>
+                </li>
+                <li class="details__listItem">
+                    <a target="_blank" href="https://www.youtube.com/channel/UCPkbsYDO4PMCVpL4Y9okEuw" class="details__link">
+                        <svg class="details__social-icon">
+                            <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                        </svg> 
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+        
+
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__item">
+                <h1 class="footer__title">O Meni</h1>
+                <p class="footer__text">Zdravo, zovem se Borko, fotograf sam u Kotor Varošu specijalizovan sam za vjenčanja, krštenja, rođendane.</p>
+            </div>
+            <div class="footer__item">
+                <h1 class="footer__title">Kontakt</h1>
+                <p class="footer__text"> Cara Dušana bb, 78220 Kotor Varoš</p>
+                <p class="footer__text">00387 63 227 407 <br> info@photoborko.com</p>
+            </div>
+            <div class="footer__item">
+                <h1 class="footer__title">Prečice</h1>
+                <a href="portfolio.php" class="footer__link">Portfolio</a>
+                <a href="blog.php" class="footer__link">Blog</a>
+                <a href="contact.php" class="footer__link">Kontakt</a>
+                <a href="login.php" class="footer__link">Login</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copyright">2023 PhotoBorko. Dizajn i izrada <a href="https://borkosavic.com" target="_blank">Borko Savić</a></p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoBorko | Official Website</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <nav class="navigation">
+        <div class="navigation__logo"><a href="index.html">Photo<span>Borko</span> </a></div>
+        <ul class="navigation__list" id="navList">
+            <li class="navigation__item"><a href="index.html" class="navigation__link">Početna</a></li>
+            <li class="navigation__item"><a href="about.html" class="navigation__link">O nama</a></li>
+            <li class="navigation__item"><a href="portfolio.html" class="navigation__link">Portfolio</a></li>
+            <li class="navigation__item"><a href="blog.html" class="navigation__link">Blog</a></li>
+            <li class="navigation__item"><a href="contact.html" class="navigation__link">Kontakt</a></li>
+        </ul>
+        <button class="hamburger" id="toggleButton">
+            <div class="bar"></div>
+        </button>
+    </nav>
+    <header class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="uploads/portfolio-images/ViG.jpg" alt="" class="slideshow__image">
+            <div class="text">Vera i Sinisa</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="uploads/portfolio-images/DiD.jpg" alt="" class="slideshow__image">
+            <div class="text">Kristina i Dario</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="uploads/portfolio-images/KiZ.jpg" alt="" class="slideshow__image">
+            <div class="text">Kasandra i Zelimir</div>
+        </div>
+    
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </header>
+    <main class="main">
+        <section class="heading text-center">
+            <h1 class="heading-primary text-italic mt-4">Ja sam Borko, fotograf iz Kotor Varoša specijalizovan za vjenčanja, krštenja, rođendane</h1>
+            <p class="heading-text mt-2 mb-4">Zabilježiću energiju i emociju Vašeg vjenčanja, rođendana ili proslave i obraditi fotografije tako, da ostanu autentične i dosljedne Vama, ali uz prisustvo našeg stila i kreativne slobode. Najljepše fotografije su one za koje niste ni znali da su načinjene.</p>
+        </section>
+
+        <section class="heading text-center">
+            <h2 class="heading-primary">Usluge</h2>
+        </section>
+
+        <section class="main-portfolio">
+            <div class="main-portfolio__item">
+            <a href="portfolio.php?source=portfolio_wedding"><img src="uploads/portfolio-images/65109339cb0685.83916036.jpg" alt="" class="main-portfolio__image"></a>
+                <!-- <p class="main-portfolio__subtitle">Some more text</p> -->
+                <h1 class="main-portfolio__title"><a href="portfolio.php?source=portfolio_wedding">Vjenčanja</a></h1>
+            </div>
+            <div class="main-portfolio__item">
+            <a href="portfolio.php?source=portfolio_baptism"><img src="uploads/portfolio-images/krstenje.jpg" alt="" class="main-portfolio__image"></a>
+                <!-- <p class="main-portfolio__subtitle">Some more text</p> -->
+                <h1 class="main-portfolio__title"><a href="portfolio.php?source=portfolio_baptism">Krštenja</a></h1>
+            </div>
+            <div class="main-portfolio__item">
+            <a href="portfolio.php?source=portfolio_birthday"><img src="uploads/portfolio-images/6510a8b3b29b56.85126355.jpg" alt="" class="main-portfolio__image"></a>
+                <!-- <p class="main-portfolio__subtitle">Some more text</p> -->
+                <h1 class="main-portfolio__title"><a href="portfolio.php?source=portfolio_portrait">Rođendani</a></h1>
+            </div>
+        </section>
+
+        <section class="videoAdd">
+            <video class="videoAdd__video" autoplay muted loop controls>
+                <source src="uploads/video/DiD.mp4" type="video/mp4" codecs="avc1.42E01E, mp4a.40.2">
+            </video>
+            <script>
+                document.getElementById('vid').play();
+            </script>
+        </section>
+        
+        <section class="heading text-center">
+            <h2 class="heading-primary"><a href="blog.html">Pogledajte naš blog</a></h2>
+        </section>
+
+        <section class="blog-cards">
+            <article class="blog-cards__article">
+                <a href="post.php?id=<?php echo $post_id; ?>"><img src="uploads/blog-images/650af1ce81e815.12231485.jpg" alt="" class="blog-cards__image"></a>
+                <a href="post.php?id=<?php echo $post_id; ?>"><h1 class="blog-cards__title">Blog post 2</h1></a>
+                <a href="post.php?id=<?php echo $post_id; ?>"><p class="blog-cards__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vel.</p></a>
+            </article>
+
+            <article class="blog-cards__article">
+                <a href="post.php?id=<?php echo $post_id; ?>"><img src="uploads/blog-images/650af1d1545a76.82870826.jpg" alt="" class="blog-cards__image"></a>
+                <a href="post.php?id=<?php echo $post_id; ?>"><h1 class="blog-cards__title">Blog post 1</h1></a>
+                <a href="post.php?id=<?php echo $post_id; ?>"><p class="blog-cards__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vel.</p></a>
+            </article>
+
+            <article class="blog-cards__article">
+                <a href="post.php?id=<?php echo $post_id; ?>"><img src="uploads/blog-images/650af218162443.29372991.jpg" alt="" class="blog-cards__image"></a>
+                <a href="post.php?id=<?php echo $post_id; ?>"><h1 class="blog-cards__title">Blog post 3</h1></a>
+                <a href="post.php?id=<?php echo $post_id; ?>"><p class="blog-cards__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vel.</p></a>
+            </article>
+        </section>
+    </main>
+
+    <hr class="hr-default">
+    <section class="details">
+        <div class="details__item">
+            <svg class="details__icon">
+                <use xlink:href="img/sprite.svg#icon-info"></use>
+            </svg> 
+            <h1 class="details__title"><a href="faq.html">Informacije</a></h1>
+            <h4 class="details__subtitle">Paketi i FAQ</h4>
+        </div>
+        <div class="details__item">
+            <svg class="details__icon">
+                <use xlink:href="img/sprite.svg#icon-pencil2"></use>
+            </svg> 
+            <h1 class="details__title"><a href="blog.html">Blog</a></h1>
+            <h4 class="details__subtitle"><a href="blog.php">Poslednji članci</a></h4>
+        </div>
+        <div class="details__item">
+            <svg class="details__icon">
+                <use xlink:href="img/sprite.svg#icon-share2"></use>
+            </svg> 
+            <h1 class="details__title">Zaprati me</h1>
+            <ul class="details__list">
+                <li class="details__listItem">
+                    <a target="_blank" href="https://www.facebook.com/photoborko/" class="details__link">
+                        <svg class="details__social-icon">
+                            <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                        </svg> 
+                    </a>
+                </li>
+                <li class="details__listItem">
+                    <a target="_blank" href="https://www.instagram.com/photoborko/" class="details__link">
+                        <svg class="details__social-icon">
+                            <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                        </svg> 
+                    </a>
+                </li>
+                <li class="details__listItem">
+                    <a target="_blank" href="https://www.youtube.com/channel/UCPkbsYDO4PMCVpL4Y9okEuw" class="details__link">
+                        <svg class="details__social-icon">
+                            <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                        </svg> 
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+        
+
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__item">
+                <h1 class="footer__title">O Meni</h1>
+                <p class="footer__text">Zdravo, zovem se Borko, fotograf sam u Kotor Varošu specijalizovan sam za vjenčanja, krštenja, rođendane.</p>
+            </div>
+            <div class="footer__item">
+                <h1 class="footer__title">Kontakt</h1>
+                <p class="footer__text"> Cara Dušana bb, 78220 Kotor Varoš</p>
+                <p class="footer__text">00387 63 227 407 <br> info@photoborko.com</p>
+            </div>
+            <div class="footer__item">
+                <h1 class="footer__title">Prečice</h1>
+                <a href="portfolio.php" class="footer__link">Portfolio</a>
+                <a href="blog.php" class="footer__link">Blog</a>
+                <a href="contact.php" class="footer__link">Kontakt</a>
+                <a href="login.php" class="footer__link">Login</a>
+            </div>
+        </div>
+        <div class="footer__bottom mt-2">
+            <p class="footer__copyright">2023 PhotoBorko. Dizajn i izrada <a href="https://borkosavic.com" target="_blank">Borko Savić</a></p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

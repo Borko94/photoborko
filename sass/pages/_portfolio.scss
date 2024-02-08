@@ -1,0 +1,56 @@
+.portfolio {
+    margin: 1rem auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 3rem; 
+
+    @media only screen and (max-width: 68.75em) {
+        width: 90%;
+        column-gap: 2rem;
+        row-gap: 1rem; 
+    }
+
+    @media only screen and (max-width: 56.25em) {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    @media only screen and (max-width: 37.5em) {
+        width: 95%;
+        column-gap: 1rem;
+        grid-template-columns: 1fr;
+        row-gap: .5rem; 
+    } 
+
+    &__card {
+        overflow: hidden; 
+    }
+
+    &__image {
+        border: .7rem solid $color-gray-light;
+        border-radius: 2px;
+        width: 100%;
+        max-height: 450px;
+        object-fit: cover; 
+    }
+
+    &__title {
+        border: .7rem solid $color-gray-light;
+        border-radius: 2px;
+        width: 50%;
+        background-color: $color-white;
+        padding: 1rem 2rem;
+        text-align: center;
+        transform: translate(50%, -3rem); 
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 1.6;
+    }
+}
+
+
+    
+
+    
+    

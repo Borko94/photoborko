@@ -1,0 +1,39 @@
+.main-portfolio {
+    // max-width: 80rem; 
+    margin: 1rem auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+
+    &__item {
+        margin: 1rem 4rem;
+        color: $color-gray-dark;
+
+        @media only screen and (max-width: $bp-small) {
+            margin: 1rem 2rem;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        max-height: 35rem;
+        aspect-ratio: 5 / 7;
+        object-fit: cover;
+    }
+
+    &__subtitle {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    &__title {
+        letter-spacing: 3.4px;
+        margin-top: 1rem;
+        font-size: 1.75rem;
+        font-family: 'Cormorant', sans-serif;
+        font-style: italic;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}

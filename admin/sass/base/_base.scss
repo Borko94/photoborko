@@ -1,0 +1,70 @@
+html {
+    box-sizing: border-box;
+    
+    // Default Font Size
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 50%;
+    }
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-rendering: optimizeSpeed;
+    min-height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img,
+picture {
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+ul,
+ol {
+    padding: 0;
+    list-style: none;
+}
+
+input,
+button,
+textarea, select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+::selection {
+    background-color: $color-text;
+    color: $color-white;
+}

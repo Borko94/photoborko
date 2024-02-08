@@ -1,0 +1,141 @@
+.contact {
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+    margin-bottom: 10rem;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+    @media only screen and (max-width: $bp-large) {
+        flex-direction: column;
+    }
+
+    &__details {
+        align-self: stretch;
+        width: 40%;
+        background-color: rgb(179, 166, 152);
+        padding: 3rem;
+
+        @media only screen and (max-width: $bp-large) {
+            width: 100%;
+            order: 2;
+        }
+    }
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-top: 1rem;
+    }
+
+    &__text {
+        font-size: 1.6rem;
+    }
+
+    &__list {
+        margin-top: 3rem;
+        list-style: none;
+    }
+    
+    &__item {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        font-size: 1.6rem;
+
+        &:not(:last-child) {
+            margin-bottom: 4rem;
+        }
+
+        span {
+            font-size: 1.6rem;
+            margin-left: 3rem;
+        }
+    }
+
+    &__icon {
+        width: 4rem;
+        height: 4rem;
+        // font-size: 3rem;
+        // padding: 1rem;
+        // color: #000;
+        // border-radius: 50%;
+        // border: 1px solid black;
+    }
+
+    // Form 
+    &__form {
+        align-self: stretch;
+
+        width: 60%;
+        padding: 3rem;
+
+        @media only screen and (max-width: $bp-large) {
+            width: 100%;
+            order: 1;
+        }
+    }
+
+    &__form-title {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    &__form-group {
+        margin: 1rem 0;
+    }
+
+    &__label {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left: .2rem;
+        margin-bottom: .7rem;
+        display: block;
+        transition: all .3s;
+    }
+
+    &__input,
+    &__textarea {
+        margin-top: 3rem;
+        font-size: 1.5rem;
+        font-family: inherit;
+        color: inherit;
+        padding: 1rem 2rem;
+        border-radius: 2px;
+        background-color: rgba($color-white, .5);
+        border: none;
+        border-bottom: 1px solid $color-black;
+        width: 90%;
+        display: block;
+        transition: all .3s;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, .1);
+            border-bottom: 1px solid $color-black;
+        }
+
+        &:focus:invalid {
+            border-bottom: 1px solid $color-gray;
+        }
+
+        &::-webkit-input-placeholder {
+            color: $color-gray;
+        }
+    }
+
+    &__textarea {
+        height: 100px;
+    }
+
+    &__button {
+        margin-top: 2rem;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        padding: 1.5rem 2rem;
+        font-size: 1.6rem;
+    }
+}

@@ -1,0 +1,4 @@
+node_modules/
+uploads/video
+admin/node_modules/
+package-lock.json
