@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400&family=Quattrocento:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap");
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Quattrocento", serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 
@@ -21,7 +21,7 @@ h4 {
 }
 
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 a {
@@ -1084,12 +1084,12 @@ textarea, select {
 
 .form__input {
   font-size: 1.5rem;
-  font-family: "Quattrocento", serif;
+  font-family: "Roboto", sans-serif;
   color: inherit;
   padding: 1.5rem 2rem;
   border-radius: 3px;
   background-color: rgba(255, 255, 255, 0.5);
-  border: 1px solid #D8DAE0;
+  border: 1px solid #ccc;
   width: 100%;
   display: block;
   transition: all 0.1s;
@@ -1107,12 +1107,12 @@ textarea, select {
 }
 .form__select, .form__option {
   font-size: 1.5rem;
-  font-family: "Quattrocento", serif;
+  font-family: "Roboto", sans-serif;
   color: inherit;
   padding: 1.5rem 2rem;
   border-radius: 3px;
   background-color: rgba(255, 255, 255, 0.5);
-  border: 1px solid #D8DAE0;
+  border: 1px solid #ccc;
   width: 100%;
   display: block;
   transition: all 0.3s;
@@ -1178,16 +1178,93 @@ textarea, select {
 }
 .form__textarea {
   font-size: 1.5rem;
-  font-family: "Quattrocento", serif;
+  font-family: "Roboto", sans-serif;
   color: inherit;
   padding: 1.5rem 2rem;
   border-radius: 3px;
   background-color: rgba(255, 255, 255, 0.5);
-  border: 1px solid #D8DAE0;
+  border: 1px solid #ccc;
   width: 100%;
   display: block;
   transition: all 0.3s;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  border-radius: 0.25em;
+  margin: 1em;
+}
+.table thead {
+  background-color: #2C2C2C;
+}
+.table thead tr th {
+  font-size: 1.2rem;
+  padding: 0.7rem;
+  vertical-align: top;
+  background: #6B5B4D;
+  border-bottom: 1px solid #364043;
+  color: #F7F5F4;
+  font-weight: 700;
+}
+.table tbody td {
+  font-size: 1.2rem;
+  color: #2C2C2C;
+  font-weight: 400;
+  padding: 0.65em 1em;
+  border: 1px solid #E2D9CD;
+}
+.table__link {
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+}
+.table__icon {
+  width: 1.9rem;
+  height: 1.9rem;
+}
+.table__icon-edit {
+  fill: #1B62A9;
+}
+.table__icon-trash {
+  fill: #F5402C;
+}
+@media only screen and (max-width: 56.25em) {
+  .table thead {
+    display: none;
+  }
+  .table tr,
+  .table td {
+    display: block;
+    width: 100%;
+  }
+  .table tr {
+    margin-bottom: 1rem;
+  }
+  .table tr:nth-child(even) {
+    background: #FCF8F0;
+    transition: all 0.3s ease-in-out;
+  }
+  .table tbody tr td {
+    text-align: right;
+    position: relative;
+    padding-right: 1.5rem;
+    font-size: 1.6rem;
+  }
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    text-align: left;
+    padding-left: 1.5rem;
+  }
+  .table__link {
+    text-align: right;
+  }
 }
 
 .admin {
@@ -1196,7 +1273,7 @@ textarea, select {
   flex-wrap: wrap;
   display: grid;
   height: 100vh;
-  grid-template-rows: 6rem 1fr 4rem;
+  grid-template-rows: 5rem 1fr 2rem;
   grid-template-columns: 20rem 1fr;
   grid-template-areas: "header header" "nav    main" "footer footer";
 }
@@ -1204,15 +1281,15 @@ textarea, select {
   display: flex;
   flex-basis: 100%;
   grid-area: header;
-  height: 6rem;
-  background-color: #fff;
+  height: 5rem;
+  background-color: #b98f4b;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   position: relative;
 }
 .admin__nav {
   flex: 0 0 20rem;
   grid-area: nav;
-  background-color: #231B23;
+  background-color: #A0A598;
 }
 .admin__main {
   flex: 1;
@@ -1229,7 +1306,7 @@ textarea, select {
   flex-basis: 100%;
   justify-content: space-between;
   align-items: center;
-  height: 4rem;
+  height: 2rem;
   padding: 0 var(--spacing);
   color: #F7F5F4;
   background-color: #1d2127;
@@ -1248,7 +1325,7 @@ textarea, select {
   position: relative;
   margin: 0;
   color: #fff;
-  background-color: #AB3C24;
+  background-color: #b98f4b;
   font-size: 1rem;
 }
 
@@ -1263,6 +1340,7 @@ textarea, select {
 .menu {
   list-style-type: none;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 .menu__item {
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);

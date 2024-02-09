@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400&family=Quattrocento:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap");
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Quattrocento", serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #011523;
 }
@@ -22,7 +22,7 @@ h4 {
 }
 
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 1.4rem;
 }
 

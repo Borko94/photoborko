@@ -1,6 +1,6 @@
 // Static Variables
-$admin-header-height: 6rem;
-$admin-footer-height: 4rem;
+$admin-header-height: 5rem;
+$admin-footer-height: 2rem;
 $admin-nav-width: 20rem;
 
 @media only screen and (max-width: $bp-medium) {
@@ -35,7 +35,7 @@ $admin-nav-width: 20rem;
     flex-basis: 100%;
     grid-area: header;
     height: $admin-header-height;
-    background-color: #fff;
+    background-color: $color-coco;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     position: relative;
   }
@@ -43,7 +43,7 @@ $admin-nav-width: 20rem;
   &__nav {
     flex: 0 0 $admin-nav-width;
     grid-area: nav;
-    background-color: $color-dark;
+    background-color: $color-pistachio;
   }
 
   &__main {
@@ -88,7 +88,7 @@ $admin-nav-width: 20rem;
   position: relative;
   margin: 0;
   color: $color-white;
-  background-color: $color-red;
+  background-color: $color-coco;
   font-size: 1rem;
 
 }
@@ -104,6 +104,7 @@ $admin-nav-width: 20rem;
 .menu {
   list-style-type: none;
   padding: 0;
+  font-family: $font-title;
 
   &__item {
     border-bottom: 1px solid rgba(255, 255, 255, 0.07);
