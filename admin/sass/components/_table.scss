@@ -1,19 +1,18 @@
 .table {
     width: 100%;
     border-collapse: collapse;
-    text-align: center;
     border-radius: 0.25em;
-    margin: 1em;
+    margin: 1rem 0;
 
     thead {
-        background-color: $color-graphite;
+        // background-color: $color-graphite;
 
         tr th {
             font-size: 1.2rem;
             padding: .7rem;
             vertical-align: top;
-            background: $color-mocha;
-            border-bottom: 1px solid #364043;
+            background: $color-coco;
+            border: 1px solid $color-pistachio;
             color: $color-light;
             font-weight: 700;
         }
@@ -26,7 +25,7 @@
             color: $color-graphite;
             font-weight: 400;
             padding: 0.65em 1em;
-            border: 1px solid $color-bisque;
+            border: 1px solid $color-pistachio;
         }
     }    
 

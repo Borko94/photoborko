@@ -17,10 +17,31 @@
             <h4>Admin | PhotoBorko</h4>
           </a>
           <div class="toolbar">
-            <!-- <button class="btn btn--primary">Add New Plumbus</button> -->
-            <!-- <a href="#" class="logout">
-              Log Out
-            </a> -->
+            <!-- <button class="btn btn-primary">Add New Plumbus</button> -->
+            <div class="logout">
+              <a class="logout__link" href="#">
+                  Borko Savic
+                  <svg class="logout__icon">
+                      <use xlink:href="img/sprite.svg#icon-circle-down"></use>
+                  </svg>
+                  </a>
+                <ul class="logout__list">
+                  <li class="logout__item">
+                    <a href="#">
+                      <svg class="logout__icon">
+                        <use xlink:href="img/sprite.svg#icon-user"></use>
+                    </svg> Profile
+                    </a>
+                  </li>
+                  <li class="logout__item">
+                    <a href="#">
+                      <svg class="logout__icon">
+                        <use xlink:href="img/sprite.svg#icon-switch"></use>
+                      </svg>
+                      Log out</a>
+                  </li>
+                </ul>
+            </div>
           </div>
         </header>
 
@@ -42,16 +63,19 @@
                   PhotoBorko &#8628;</a>
               <ul class="aside__dropdown">
                   <li class="aside__item">
-                      <a href="#" class="aside__link">Kalendar</a>
+                      <a href="html/calendar.html" class="aside__link">Kalendar</a>
                   </li>
                   <li class="aside__item">
-                      <a href="#" class="aside__link">Cjenovnik</a>
+                    <a href="html/pricing.html" class="aside__link">Paketi</a>
                   </li>
                   <li class="aside__item">
-                    <a href="#" class="aside__link">Musterije</a>
+                      <a href="html/pricing.html" class="aside__link">Cjenovnik</a>
+                  </li>
+                  <li class="aside__item">
+                    <a href="html/customers.html" class="aside__link">Musterije</a>
                 </li>
                 <li class="aside__item">
-                  <a href="#" class="aside__link">Kontakti</a>
+                  <a href="html/contact.html" class="aside__link">Kontakti</a>
                 </li>
                 <li class="aside__item">
                   <a href="#" class="aside__link">Proizvodi</a>
@@ -72,16 +96,16 @@
                   Portfolio &#8628;</a>
               <ul class="aside__dropdown">
                   <li class="aside__item">
-                      <a href="#" class="aside__link">Svi članci</a>
+                      <a href="html/blog_all_posts.html" class="aside__link">Svi članci</a>
                   </li>
                   <li class="aside__item">
-                      <a href="#" class="aside__link">Dodaj novi</a>
+                      <a href="html/add_post.html" class="aside__link">Dodaj novi</a>
                   </li>
                   <li class="aside__item">
-                    <a href="#" class="aside__link">Komentari</a>
+                    <a href="html/comments.html" class="aside__link">Komentari</a>
                 </li>
                 <li class="aside__item">
-                  <a href="#" class="aside__link">Portfolio kategorije</a>
+                  <a href="html/categories.html" class="aside__link">Portfolio kategorije</a>
               </li>
               <li class="aside__item">
                 <a class="menu__link dropdown-btn" href="#">
@@ -108,16 +132,16 @@
                   Blog &#8628;</a>
                 <ul class="aside__dropdown">
                     <li class="aside__item">
-                        <a href="#" class="aside__link">Svi članci</a>
+                        <a href="html/blog_all_posts.html" class="aside__link">Svi članci</a>
                     </li>
                     <li class="aside__item">
-                        <a href="#" class="aside__link">Dodaj novi</a>
+                        <a href="html/add_post.html" class="aside__link">Dodaj novi</a>
                     </li>
                     <li class="aside__item">
-                      <a href="#" class="aside__link">Komentari</a>
+                      <a href="html/comments.html" class="aside__link">Komentari</a>
                   </li>
                   <li class="aside__item">
-                    <a href="#" class="aside__link">Blog kategorije</a>
+                    <a href="html/categories.html" class="aside__link">Blog kategorije</a>
                 </li>
                 <li class="aside__item">
                   <a class="menu__link dropdown-btn" href="#">
@@ -185,10 +209,10 @@
                   Korisnici &#8628;</a>
                 <ul class="aside__dropdown">
                     <li class="aside__item">
-                        <a href="#" class="aside__link">Svi korisnici</a>
+                        <a href="html/users.html" class="aside__link">Svi korisnici</a>
                     </li>
                     <li class="aside__item">
-                        <a href="#" class="aside__link">Dodaj novi</a>
+                        <a href="html/add_user.html" class="aside__link">Dodaj novi</a>
                     </li>
                     <li class="aside__item">
                       <a href="#" class="aside__link">Privilegije</a>
@@ -196,7 +220,7 @@
                 </ul>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link" href="html/profile.html">
                 <svg class="aside__icon">
                     <use xlink:href="img/sprite.svg#icon-user"></use>
                 </svg>
@@ -209,6 +233,159 @@
         <main class="admin__main">
           <h2 class="mb-2">Dashboard</h2>
           <div class="dashboard">
+
+            <div class="dashboard__item dashboard__item--col">
+              <div class="card">
+                <div class="card__details">
+                  <h3><a href="#">54</a></h3>
+                  <p><a href="#">Clanaka</a></p>
+                </div>
+                <svg class="card__icon">
+                  <use xlink:href="img/sprite.svg#icon-blogger"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="dashboard__item dashboard__item--col">
+              <div class="card">
+                <div class="card__details">
+                  <h3><a href="#">15</a></h3>
+                  <p><a href="#">Komentara</a></p>
+                </div>
+                <svg class="card__icon">
+                  <use xlink:href="img/sprite.svg#icon-bubbles"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="dashboard__item dashboard__item--col">
+              <div class="card">
+                <div class="card__details">
+                  <h3><a href="#">54</a></h3>
+                  <p><a href="#">Clanaka</a></p>
+                </div>
+                <svg class="card__icon">
+                  <use xlink:href="img/sprite.svg#icon-blog"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="dashboard__item dashboard__item--col">
+              <div class="card">
+                <div class="card__details">
+                  <h3><a href="#">460</a></h3>
+                  <p><a href="#">Pregleda</a></p>
+                </div>
+                <svg class="card__icon">
+                  <use xlink:href="img/sprite.svg#icon-users"></use>
+                </svg>
+              </div>
+            </div>
+
+
+
+            <div class="dashboard__item--full">
+              <table class="table table__wrapper">
+                <thead>
+                  <tr class="table__row">
+                    <th class="table__head">ID</th>
+                    <th class="table__head">Kategorija</th>
+                    <th class="table__head">Naslov</th>
+                    <th class="table__head">Author</th>
+                    <th class="table__head">Date</th>
+                    <th class="table__head">Status</th>
+                    <th class="table__head">Views</th>
+                    <th class="table__head">Comments</th>
+                    <th class="table__head">Approve</th>
+                    <th class="table__head">Draft</th>
+                    <th colspan="2" class="table__head">Akcije</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table__row">
+                    <td data-label="ID" class="table__data">1</td>
+                    <td data-label="Kategorija" class="table__data">Vjencanje</td>
+                    <td data-label="Naslov" class="table__data">Kristina i Dario</td>
+                    <td data-label="Author" class="table__data">Borko</td>
+                    <td data-label="Date" class="table__data">15.09.2023.</td>
+                    <td data-label="Status" class="table__data">Approved</td>
+                    <td data-label="Views" class="table__data">15</td>
+                    <td data-label="Comments" class="table__data">5</td>
+                    <td data-label="Approve" class="table__data">Approve</td>
+                    <td data-label="Draft" class="table__data">Draft</td>
+                    <td data-label="Edituj" class="table__data">
+                      <a href="#" class="table__link">
+                        <svg class="table__icon table__icon-edit">
+                          <use xlink:href="img/sprite.svg#icon-pencil"></use>
+                        </svg>
+                      </a>
+                    </td>
+                    <td data-label="Obrisi" class="table__data">
+                      <a href="#" class="table__link">
+                        <svg class="table__icon table__icon-trash">
+                          <use xlink:href="img/sprite.svg#icon-bin"></use>
+                        </svg>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="table__row">
+                    <td data-label="ID" class="table__data">1</td>
+                    <td data-label="Kategorija" class="table__data">Vjencanje</td>
+                    <td data-label="Naslov" class="table__data">Kristina i Dario</td>
+                    <td data-label="Author" class="table__data">Borko</td>
+                    <td data-label="Date" class="table__data">15.09.2023.</td>
+                    <td data-label="Status" class="table__data">Approved</td>
+                    <td data-label="Views" class="table__data">15</td>
+                    <td data-label="Comments" class="table__data">5</td>
+                    <td data-label="Approve" class="table__data">Approve</td>
+                    <td data-label="Draft" class="table__data">Draft</td>
+                    <td data-label="Edituj" class="table__data">
+                      <a href="#" class="table__link">
+                        <svg class="table__icon table__icon-edit">
+                          <use xlink:href="img/sprite.svg#icon-pencil"></use>
+                        </svg>
+                      </a>
+                    </td>
+                    <td data-label="Obrisi" class="table__data">
+                      <a href="#" class="table__link">
+                        <svg class="table__icon table__icon-trash">
+                          <use xlink:href="img/sprite.svg#icon-bin"></use>
+                        </svg>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="table__row">
+                    <td data-label="ID" class="table__data">1</td>
+                    <td data-label="Kategorija" class="table__data">Vjencanje</td>
+                    <td data-label="Naslov" class="table__data">Kristina i Dario</td>
+                    <td data-label="Author" class="table__data">Borko</td>
+                    <td data-label="Date" class="table__data">15.09.2023.</td>
+                    <td data-label="Status" class="table__data">Approved</td>
+                    <td data-label="Views" class="table__data">15</td>
+                    <td data-label="Comments" class="table__data">5</td>
+                    <td data-label="Approve" class="table__data">Approve</td>
+                    <td data-label="Draft" class="table__data">Draft</td>
+                    <td data-label="Edituj" class="table__data">
+                      <a href="#" class="table__link">
+                        <svg class="table__icon table__icon-edit">
+                          <use xlink:href="img/sprite.svg#icon-pencil"></use>
+                        </svg>
+                      </a>
+                    </td>
+                    <td data-label="Obrisi" class="table__data">
+                      <a href="#" class="table__link">
+                        <svg class="table__icon table__icon-trash">
+                          <use xlink:href="img/sprite.svg#icon-bin"></use>
+                        </svg>
+                      </a>
+                    </td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+
+
+
+
+
             <div class="dashboard__item">
               <div class="card">
                 <strong>41</strong> Foobars
@@ -224,37 +401,12 @@
                 <img src="https://imgs.xkcd.com/comics/decline.png" alt="" />
               </div>
             </div>
-            <div class="dashboard__item dashboard__item--col">
-              <div class="card">A</div>
-            </div>
-            <div class="dashboard__item dashboard__item--col">
-              <div class="card">B</div>
-            </div>
-            <div class="dashboard__item dashboard__item--col">
-              <div class="card">C</div>
-            </div>
-            <div class="dashboard__item dashboard__item--col">
-              <div class="card">D</div>
-            </div>
           </div>
-          
-            
-        <div class="row gap-1">
-            <div class="col-4-xs">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat alias eaque iusto voluptatum maxime dolorem consequuntur facilis quaerat impedit adipisci.</p>
-            </div>
-            <div class="col-4-xs">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, deserunt?</p>
-            </div>
-            <div class="col-4-xs">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, error provident? Laboriosam cum omnis quam?</p>
-            </div>
-        </div>
            
         </main>
         <footer class="admin__footer">
           <ul class="ticker">
-            <p><a href="https://mxb.at/blog/css-grid-admin-dashboard/">read more about this in this blogpost</a>.</p>
+            <li><a href="https://mxb.at/blog/css-grid-admin-dashboard/">read more about this in this blogpost</a></li>
             <!-- <li class="ticker__item">BTC: +3.12%</li>
             <li class="ticker__item">ETH: +1.29%</li>
             <li class="ticker__item">XRP: -0.32%</li>
@@ -268,6 +420,6 @@
         </footer>
       </div>
     
-      <script src="js/script.js"></script>
+      <script src="../js/script.js"></script>
 </body>
 </html>

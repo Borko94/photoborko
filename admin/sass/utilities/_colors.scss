@@ -1,0 +1,81 @@
+@each $key, $val in $colors {
+    .text-#{$key}{
+        color: $val;
+    }
+    // Text hover color
+    .text-hover-#{$key} {
+        &:hover {
+            color: $val
+        }
+    }
+
+    .bg-#{$key} {
+        background-color: $val;
+    }
+    // Background hover color
+    .bg-hover-#{$key}{
+        &:hover {
+            background-color: $val
+        }
+    }
+
+    // Border 
+    .border-#{$key}{
+        border: .53rem solid $val;
+    }
+    .border-left-#{$key}{
+        border-left: .53rem solid $val;
+    }
+    .border-right-#{$key}{
+        border-right: .53rem solid $val;
+    }
+    .border-top-#{$key}{
+        border-top: .53rem solid $val;
+    }
+    .border-bottom-#{$key}{
+        border-bottom: .53rem solid $val;
+    }
+
+    @for $i from 1 through 9 {
+        .text-#{$key}-light-#{$i}{
+            color: mix(white, $val, $i * 10%)
+        }
+
+        .text-#{$key}-dark-#{$i}{
+            color: mix(black, $val, $i * 10%)
+        }
+
+        // Text hover color light and dark
+        .text-hover-#{$key}-light-#{$i}{
+            &:hover {
+                color: mix(white, $val, $i * 10%)
+            }
+        }
+
+        .text-hover-#{$key}-dark-#{$i}{
+            &:hover {
+                color: mix(black, $val, $i * 10%)
+            }
+        }
+
+        .bg-#{$key}-light-#{$i}{
+            background-color: mix(white, $val, $i * 10%)
+        }
+
+        .bg-#{$key}-dark-#{$i}{
+            background-color: mix(black, $val, $i * 10%)
+        }
+        // Background hover color light and dark
+        .bg-hover-#{$key}-light-#{$i}{
+            &:hover {
+                background-color: mix(white, $val, $i * 10%)
+            }
+        }
+
+        .bg-hover-#{$key}-dark-#{$i}{
+            &:hover {
+                background-color: mix(black, $val, $i * 10%)
+            }
+        }
+    }
+}

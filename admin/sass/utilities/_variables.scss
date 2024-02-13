@@ -45,6 +45,25 @@ $bg-color-body: $color-primary;
 $bg-color-sidenav: $color-primary;
 $bg-color-content: $color-primary;
 
+$colors: (
+    "info": $color-info,
+    "sucess": $color-success,
+    "danger": $color-danger,
+    "warning": $color-warning,
+    "blue": #0067a5,
+    "red": #d0021b,
+    "yellow": #ffff11,
+    "orange": #ff6600,
+    "green": #7ed321,
+    "purple": #733380,
+    "gray": #a8a8a8,
+    "black": #000000,
+    "white": #ffffff,
+    "pink": #fe4164,
+    "midnight": #3c574e,
+    "coffee": #fff2d7,
+);
+
 // Margin
 $margin-default: 1rem;
 

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | PhotoBorko</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="https://cdn.tiny.cloud/1/hf7g21rih1xbx4s0dil6yztrfqp2osfghmx9elqqhrl0z9rn/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+</head>
+<body>
+    <div class="admin">
+        <!-- Header -->
+        <header class="admin__header">
+          <a href="index.html" class="logo">
+            <h4>Admin | PhotoBorko</h4>
+          </a>
+          <div class="toolbar">
+            <!-- <button class="btn btn-primary">Add New Plumbus</button> -->
+            <div class="logout">
+              <a class="logout__link" href="#">
+                  Borko Savic
+                  <svg class="logout__icon">
+                      <use xlink:href="../img/sprite.svg#icon-circle-down"></use>
+                  </svg>
+                  </a>
+                <ul class="logout__list">
+                  <li class="logout__item">
+                    <a href="#">
+                      <svg class="logout__icon">
+                        <use xlink:href="../img/sprite.svg#icon-user"></use>
+                    </svg> Profile
+                    </a>
+                  </li>
+                  <li class="logout__item">
+                    <a href="#">
+                      <svg class="logout__icon">
+                        <use xlink:href="../img/sprite.svg#icon-switch"></use>
+                      </svg>
+                      Log out</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </header>
+
+        <!-- Side navigation -->
+        <nav class="admin__nav">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">
+                <svg class="aside__icon">
+                    <use xlink:href="../img/sprite.svg#icon-meter"></use>
+                </svg>
+                Dashboard</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link dropdown-btn" href="#">
+                  <svg class="aside__icon">
+                      <use xlink:href="../img/sprite.svg#icon-camera"></use>
+                  </svg>
+                  PhotoBorko &#8628;</a>
+              <ul class="aside__dropdown">
+                  <li class="aside__item">
+                      <a href="calendar.html" class="aside__link">Kalendar</a>
+                  </li>
+                  <li class="aside__item">
+                    <a href="pricing.html" class="aside__link">Paketi</a>
+                  </li>
+                  <li class="aside__item">
+                      <a href="pricing.html" class="aside__link">Cjenovnik</a>
+                  </li>
+                  <li class="aside__item">
+                    <a href="customers.html" class="aside__link">Musterije</a>
+                </li>
+                <li class="aside__item">
+                  <a href="contact.html" class="aside__link">Kontakti</a>
+                </li>
+                <li class="aside__item">
+                  <a href="#" class="aside__link">Proizvodi</a>
+                </li>
+                <li class="aside__item">
+                  <a href="#" class="aside__link">Ugovor</a>
+                </li>
+                <li class="aside__item">
+                  <a href="#" class="aside__link">Testimonials</a>
+              </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link dropdown-btn" href="#">
+                  <svg class="aside__icon">
+                      <use xlink:href="../img/sprite.svg#icon-briefcase"></use>
+                  </svg>
+                  Portfolio &#8628;</a>
+              <ul class="aside__dropdown">
+                  <li class="aside__item">
+                      <a href="blog_all_posts.html" class="aside__link">Svi članci</a>
+                  </li>
+                  <li class="aside__item">
+                      <a href="add_post.html" class="aside__link">Dodaj novi</a>
+                  </li>
+                  <li class="aside__item">
+                    <a href="comments.html" class="aside__link">Komentari</a>
+                </li>
+                <li class="aside__item">
+                  <a href="categories.html" class="aside__link">Portfolio kategorije</a>
+              </li>
+              <li class="aside__item">
+                <a class="menu__link dropdown-btn" href="#">
+                  <svg class="aside__icon">
+                      <use xlink:href="../img/sprite.svg#icon-images"></use>
+                  </svg>
+                  Galerija &#8628;</a>
+                <ul class="aside__dropdown">
+                  <li class="aside__item">
+                    <a href="#" class="aside__link">Sve fotografije</a>
+                  </li>
+                  <li class="aside__item">
+                      <a href="#" class="aside__link">Dodaj fotografije</a>
+                  </li>
+                </ul>
+              </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link dropdown-btn" href="#">
+                  <svg class="aside__icon">
+                      <use xlink:href="../img/sprite.svg#icon-blog"></use>
+                  </svg>
+                  Blog &#8628;</a>
+                <ul class="aside__dropdown">
+                    <li class="aside__item">
+                        <a href="blog_all_posts.html" class="aside__link">Svi članci</a>
+                    </li>
+                    <li class="aside__item">
+                        <a href="add_post.html" class="aside__link">Dodaj novi</a>
+                    </li>
+                    <li class="aside__item">
+                      <a href="comments.html" class="aside__link">Komentari</a>
+                  </li>
+                  <li class="aside__item">
+                    <a href="categories.html" class="aside__link">Blog kategorije</a>
+                </li>
+                <li class="aside__item">
+                  <a class="menu__link dropdown-btn" href="#">
+                    <svg class="aside__icon">
+                        <use xlink:href="../img/sprite.svg#icon-images"></use>
+                    </svg>
+                    Galerija &#8628;</a>
+                    <ul class="aside__dropdown">
+                      <li class="aside__item">
+                        <a href="#" class="aside__link">Sve fotografije</a>
+                      </li>
+                      <li class="aside__item">
+                          <a href="#" class="aside__link">Dodaj fotografije</a>
+                      </li>
+                    </ul>
+                </li>
+                </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link dropdown-btn" href="#">
+                <svg class="aside__icon">
+                    <use xlink:href="../img/sprite.svg#icon-cart"></use>
+                </svg>
+                Store &#8628;</a>
+                <ul class="aside__dropdown">
+                  <li class="aside__item">
+                      <a href="#" class="aside__link">Proizvodi</a>
+                  </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                <svg class="aside__icon">
+                    <use xlink:href="../img/sprite.svg#icon-list-numbered"></use>
+                </svg>
+                To Do</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                <svg class="aside__icon">
+                    <use xlink:href="../img/sprite.svg#icon-cloud-check"></use>
+                </svg>
+                Projekti</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link dropdown-btn" href="#">
+                <svg class="aside__icon">
+                    <use xlink:href="../img/sprite.svg#icon-sphere"></use>
+                </svg>
+                Website &#8628;</a>
+                <ul class="aside__dropdown">
+                  <li class="aside__item">
+                    <a href="#" class="aside__link">Statistika</a>
+                  </li>
+                  <li class="aside__item">
+                    <a href="#" class="aside__link">File Manager</a>
+                  </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link dropdown-btn" href="#">
+                  <svg class="aside__icon">
+                      <use xlink:href="../img/sprite.svg#icon-users"></use>
+                  </svg>
+                  Korisnici &#8628;</a>
+                <ul class="aside__dropdown">
+                    <li class="aside__item">
+                        <a href="users.html" class="aside__link">Svi korisnici</a>
+                    </li>
+                    <li class="aside__item">
+                        <a href="add_user.html" class="aside__link">Dodaj novi</a>
+                    </li>
+                    <li class="aside__item">
+                      <a href="#" class="aside__link">Privilegije</a>
+                  </li>
+                </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="profile.html">
+                <svg class="aside__icon">
+                    <use xlink:href="../img/sprite.svg#icon-user"></use>
+                </svg>
+                Profil</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Main content -->
+        <main class="admin__main">
+          <h3 class="">Korisnici - Dodaj novog korisnika</h3>
+          <div class="dashboard">
+            
+            <div class="dashboard__item dashboard__item--full">
+              <div class="">
+                <form action="" class="form">
+                    <div class="row gap-1">
+                        <div class="form__group col-3-md col-6-xs">
+                            <label class="form__label">Ime</label>
+                            <input class="form__input" type="text" class="form__input" placeholder="Naslov">
+                        </div>
+                        
+                        <div class="form__group col-3-md col-6-xs">
+                            <label class="form__label">Prezime</label>
+                            <input class="form__input" type="text" class="form__input" placeholder="Podnaslov">
+                        </div>
+                        <div class="form__group col-3-md col-6-xs">
+                            <label class="form__label">Korisnicko ime</label>
+                            <input class="form__input" type="text" class="form__input" placeholder="Tags">
+                        </div>
+                        <div class="form__group col-3-md col-6-xs">
+                            <label class="form__label">Email</label>
+                            <input class="form__input" type="text" class="form__input" placeholder="Tags">
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <lable class="form__label">Fotografija</lable>
+                        <input name="post_image" type="file" class="form__input" placeholder="Foto...">
+                    </div>
+                    <div class="row gap-1">
+                        <div class="form__group col-6-md col-6-xs">
+                            <label for="" class="form__label">Role</label>
+                            <select name="" id="" class="form__select">
+                                <option value="1" class="form__option">Admin</option>
+                                <option value="1" class="form__option">Video</option>
+                                <option value="1" class="form__option">Foto + Video</option>
+                            </select>
+                        </div>
+                        <div class="form__group col-6-md col-6-xs">
+                            <label for="" class="form__label">Status</label>
+                            <select name="" id="" class="form__select">
+                                <option value="1" class="form__option">Aktivan</option>
+                                <option value="1" class="form__option">Video</option>
+                                <option value="1" class="form__option">Foto + Video</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row gap-1 ">
+                      <div class="form__group col-6-md col-6-xs">
+                        <label for="" class="form__label">Lozinka</label>
+                        <input name="post_image" type="password" class="form__input">
+                      </div>
+                    </div>
+                    <div class="row gap-1 ">
+                        <div class="form__group">
+                          <button class="btn btn-success" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </main>
+        
+        <footer class="admin__footer">
+          <ul class="ticker">
+            <p><a href="https://mxb.at/blog/css-grid-admin-dashboard/">read more about this in this blogpost</a>.</p>
+            <!-- <li class="ticker__item">BTC: +3.12%</li>
+            <li class="ticker__item">ETH: +1.29%</li>
+            <li class="ticker__item">XRP: -0.32%</li>
+            <li class="ticker__item">BCH: -2.82%</li>
+            <li class="ticker__item">EOS: +1.44%</li>
+            <li class="ticker__item">CSS: +13.37%</li> -->
+          </ul>
+          <span>
+            <a href="https://borkosavic.com">&copy; 2024 Borko Savic</a>.
+          </span>
+        </footer>
+      </div>
+    
+     
+      <script src="../js/script.js"></script>
+</body>
+</html>

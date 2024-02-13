@@ -1,0 +1,30 @@
+.card {
+    height: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__details {
+      display: flex;
+      flex-direction: column;
+      
+      p {
+        margin-top: 1rem;
+        font-size: 1.6rem;
+      }
+    }
+
+    &__icon {
+      margin-right: 1rem;
+      width: 4rem;
+      height: 4rem;
+      fill: $color-coco;
+    }
+  }
