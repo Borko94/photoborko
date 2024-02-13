@@ -42,7 +42,6 @@
             while($row = mysqli_fetch_assoc($run_select_category)) {
                 $cat_id = $row['portfolio_category_id'];
                 $cat_name = $row['portfolio_category_name'];
-            
             ?>
             <a href="reservations.php?source=reservations_by_category&id=<?php echo $cat_id; ?>"><?php echo $cat_name; }?></a>
         </td>
@@ -53,7 +52,6 @@
             while($row = mysqli_fetch_assoc($run_select_pricing)) {
                 $pricing_id = $row['pricing_id'];
                 $pricing_title = $row['pricing_title'];
-            
             ?>
             <a href="reservations.php?source=reservations_by_package&id=<?php echo $pricing_id; ?>"><?php echo $pricing_title; }?></a>
         </td>
