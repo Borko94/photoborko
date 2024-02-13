@@ -7,12 +7,12 @@
         <th class="table__head">Paket</th>
         <th class="table__head">Datum</th>
         <th class="table__head">Detalji</th>
-        <th colspan="2" class="table__head">Akcije</th>
         </tr>
     </thead>
     <tbody>
     <?php
-    $select_reservations = "SELECT * FROM reservations ORDER BY reservation_id DESC";
+    $select_reservation_package = $_GET['id'];
+    $select_reservations = "SELECT * FROM reservations WHERE reservation_category_id =  $select_reservation_package ORDER BY reservation_id DESC";
     $run_select_reservations = mysqli_query($conn, $select_reservations);
     while($row = mysqli_fetch_assoc($run_select_reservations)){
         $reservation_id = $row['reservation_id'];
@@ -44,7 +44,7 @@
                 $cat_name = $row['portfolio_category_name'];
             
             ?>
-            <a href="reservations.php?source=reservations_by_category&id=<?php echo $cat_id; ?>"><?php echo $cat_name; }?></a>
+            <a href="reservations.php?source=reservations_by_category&id=<?php echo $pricing_id; ?>"><?php echo $cat_name; }?></a>
         </td>
         <td data-label="Naslov" class="table__data">
             <?php
@@ -59,20 +59,6 @@
         </td>
         <td data-label="Date" class="table__data"><?php echo $reservation_date; ?></td>
         <td data-label="Author" class="table__data"><?php echo $reservation_details; ?></td>
-        <td data-label="Edituj" class="table__data">
-            <a href="reservations.php?source=edit_reservation&reservation_id=<?php echo $reservation_id; ?>" class="table__link">
-            <svg class="table__icon table__icon-edit">
-                <use xlink:href="img/sprite.svg#icon-pencil"></use>
-            </svg>
-            </a>
-        </td>
-        <td data-label="Obrisi" class="table__data">
-            <a href="reservations.php?delete=<?php echo $reservation_id; ?>" class="table__link">
-            <svg class="table__icon table__icon-trash">
-                <use xlink:href="img/sprite.svg#icon-bin"></use>
-            </svg>
-            </a>
-        </td>
         </tr>
         <?php } ?>
     </tbody>

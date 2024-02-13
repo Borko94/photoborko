@@ -60,7 +60,7 @@
             }
             while($row = mysqli_fetch_assoc($run_select_users_query)){
                 $post_author_name = $row['user_firstname'];
-            } ?><a href="blog.php?source=blog_posts_by_author&id=<?php echo $post_author_id; ?>"><?php echo $post_author_name; ?></a>
+             ?><a href="blog.php?source=blog_posts_by_author&id=<?php echo $post_author_id; ?>"><?php echo $post_author_name; }?></a>
             </td>
             <td data-label="Date" class="table__data"><?php echo $post_date; ?></td>
             <td data-label="Status" class="table__data"><?php echo $post_status; ?></td>

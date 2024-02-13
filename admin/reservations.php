@@ -21,6 +21,14 @@
         include "includes/edit_reservation.php";
         break;
 
+        case 'reservations_by_package';
+        include "includes/reservations_by_package.php";
+        break;
+
+        case 'reservations_by_category';
+        include "includes/reservations_by_category.php";
+        break;
+
         default:
         include "includes/view_all_reservations.php";
         break;
