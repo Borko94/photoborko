@@ -21,6 +21,10 @@
         include "includes/edit_pricing.php";
         break;
 
+        case 'pricing_by_category';
+        include "includes/pricing_by_category.php";
+        break;
+
         default:
         include "includes/view_all_pricing.php";
         break;

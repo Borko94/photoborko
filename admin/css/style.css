@@ -6407,6 +6407,10 @@ textarea, select {
   border-radius: 0.25em;
   margin: 1rem 0;
 }
+.table__scorll {
+  max-height: 15rem;
+  overflow: scroll;
+}
 .table thead tr th {
   font-size: 1.2rem;
   padding: 0.7rem;

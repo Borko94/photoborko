@@ -4,6 +4,11 @@
     border-radius: 0.25em;
     margin: 1rem 0;
 
+    &__scorll {
+        max-height: 15rem;
+        overflow: scroll;
+    }
+
     thead {
         // background-color: $color-graphite;
 

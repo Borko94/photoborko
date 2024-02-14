@@ -6,7 +6,6 @@
 <!-- Main content -->
 <main class="admin__main">
     <h2 class="mb-2">Kontakti</h2>
-    <a href="contacts.php?source=add_contact" class="btn btn-success">Dodaj novi kontakt</a>
     <?php
     if(isset($_GET['source'])) {
        $source = $_GET['source'];
